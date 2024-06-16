@@ -63,7 +63,7 @@ export default function Products() {
       price: 149.99,
     },
   ]
-  const [selectedCategory, setSelectedCategory] = useState(null)
+  var [selectedCategory, setSelectedCategory] = useState<any | null>(null);
   const filteredProducts = useMemo(() => {
     if (selectedCategory === "All") {
       return products

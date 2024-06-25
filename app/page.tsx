@@ -4,6 +4,7 @@ import { Card } from "@/app/componenets/ui/card"
 import { Input } from "@/app/componenets/ui/input"
 import Image from "next/image";
 import Link from "next/link";
+import { JSX, SVGProps } from "react";
 
 
 export default function Home() {
@@ -253,7 +254,7 @@ export default function Home() {
   );
 }
 
-function StarIcon(props) {
+function StarIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -273,7 +274,7 @@ function StarIcon(props) {
 }
 
 
-function WashingMachineIcon(props) {
+function WashingMachineIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
